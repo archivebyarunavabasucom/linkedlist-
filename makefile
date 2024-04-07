@@ -33,6 +33,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 # Rule for cleaning files
 clean:
+	rm -rf $(BUILD_DIR)/*.o $(TARGET)
 	rmdir  $(BUILD_DIR)
 
 # Rule for running the program
